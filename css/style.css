@@ -2,7 +2,7 @@
 #nav{
     background-attachment: scroll;
     position: relative;
-    top:38vh;
+    top:180px;
     float: left;
     border-top-right-radius: 160px;
     border-bottom-right-radius: 160px;
@@ -41,15 +41,30 @@
 }
 
 #tcontainer{
-    height: 80vh;
+    height: 550px;
+    overflow: hidden;
     background-image: url("../img/top-container-bg.jpeg");
     background-attachment: fixed; 
     background-size: cover;
 }
 
+.polygon{
+    z-index: 100;
+    position: absolute;
+}
+
+#bottom-left-poly{
+    top:150px;
+    /* width: 800px; */
+}
+#top-right-poly{
+    right:0px;
+}
+
 #row1{
-    height: 80vh;
-    background-image: linear-gradient(to bottom,rgba(251,199,120,0.01),rgba(245,118,60,0.04));
+    height: 550px;
+    background: rgba(61, 51, 51, 0.97);
+    /* background-image: linear-gradient(to bottom,rgba(251,199,120,0.01),rgba(245,118,60,0.04)); */
     background-attachment: fixed;    
 }
 

@@ -63,7 +63,7 @@
 
 #row1{
     height: 550px;
-    background: rgba(61, 51, 51, 0.97);
+    background: rgba(61, 51, 51, 1);
     /* background-image: linear-gradient(to bottom,rgba(251,199,120,0.01),rgba(245,118,60,0.04)); */
     background-attachment: fixed;    
 }
@@ -76,7 +76,7 @@
     /* position: absolute; */
     font-family: 'Syncopate', sans-serif;
     font-weight: 700;
-    padding-top: 35vh;
+    padding-top: 200px;
     color: white;
     font-size: 90px;
     opacity: 0;
@@ -89,8 +89,8 @@
 }
 
 .heading-space{
-    height: 30vh;
-    margin: 0px 250px 0px 250px;
+    
+    margin: 0rem 10rem 0rem 10rem;
     text-align: center;
 }
 
@@ -107,23 +107,56 @@
 }
 
 #content-container{
-    background-image: linear-gradient(to top, #2f2f2f,#000000);
+    background: white;
+    margin: auto;
+    /* background-image: linear-gradient(to top, #2f2f2f,#000000); */
 }
 
 .content-container-row{
-    height: 35vh;
-    margin: 2vh 2vh 2vh 2vh;
+    height: 50vh;
+    margin: 20px 20px 20px 20px;
 }
 
 .content-row-col{
     height: 100%;
-    width: 100%;
-    padding: 2.5vh 8vw 2.5vh 8vw;
+    width: auto;
+    /* background-image: url("../img/client-servicing.jpg"); */
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#card1, #card2b, #card3{
+    width:60%;
+    background: yellow;
+}
+#tcard1, #tcard2b, #tcard3{
+    width: 25rem;
+}
+#card1b, #card2, #card3b{
+    width: 35%;
+    background: red;
+}
+
+#tcard1b, #tcard2, #tcard3b{
+    width: 20rem;
 }
 
 .cards{
+    float: left;
+    overflow: hidden;
     position: relative;
-    background: cyan;
-    margin  : 0px 15px 0px 15px;
-    height: 100%; 
+    /* background: cyan; */
+    margin  : 10px 5px 0px 5px;
+    padding: 20px 0px 20px 0px;
+    height: 100%;
+}
+
+.text-card{
+    margin: 0 0 0 1rem;
+    padding: 10px 10px 10px 10px ;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+#content-row0{
+    height: auto;
 }

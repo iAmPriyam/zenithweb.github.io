@@ -5,7 +5,7 @@
 #nav{
     background-attachment: scroll;
     position: relative;
-    top:180px;
+    top:40vh;
     float: left;
     border-top-right-radius: 160px;
     border-bottom-right-radius: 160px;
@@ -30,9 +30,7 @@
     margin-bottom: 10px;
 }
 
-#nav:hover{
-    opacity: 1;
-}
+
 
 #nav-text{
     font-family: 'Syncopate', sans-serif;
@@ -43,7 +41,7 @@
 }
 
 #tcontainer{
-    height: 550px;
+    height: 100vh;
     overflow: hidden;
     background-image: url("../img/top-container-bg.jpeg");
     background-attachment: fixed; 
@@ -56,7 +54,7 @@
 }
 
 #bottom-left-poly{
-    top:150px;
+    bottom:0px;
     /* width: 800px; */
 }
 #top-right-poly{
@@ -65,8 +63,9 @@
 
 #row1{
     height: 550px;
-    background: rgba(61, 51, 51, 1);
+    /* background: rgba(61, 51, 51, 1); */
     /* background-image: linear-gradient(to bottom,rgba(251,199,120,0.01),rgba(245,118,60,0.04)); */
+    background-image: radial-gradient(center,#000000,#383131 );
     background-attachment: fixed;    
 }
 
@@ -78,7 +77,7 @@
     /* position: absolute; */
     font-family: 'Syncopate', sans-serif;
     font-weight: 700;
-    padding-top: 200px;
+    padding-top: 40vh;
     color: white;
     font-size: 90px;
     opacity: 0;
@@ -109,17 +108,19 @@
 }
 
 #content-container{
-    background-image: linear-gradient( to bottom, rgba(61, 51, 51, 1), rgba(102,102,102,1) );  
-    margin: auto;
+    background: #efefef;
+    overflow: hidden;
+    /* background-image: linear-gradient( to bottom, rgba(61, 51, 51, 1), rgba(102,102,102,1) );   */
     /* background-image: linear-gradient(to top, #2f2f2f,#000000); */
 }
 
 .content-container-row{
-    height: 50vh;
+    height: 20rem;
     margin: 20px 20px 20px 20px;
 }
 
 .content-row-col{
+    margin: 0;
     height: 100%;
     width: auto;
     /* background-image: url("../img/client-servicing.jpg"); */
@@ -141,12 +142,16 @@
     width: 20rem;
 }
 
+.cards:nth-child(even){
+    align-content: right;
+}
+
 .cards{
     float: left;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
     /* background: cyan; */
-    margin  : 10px 5px 0px 5px;
+    margin  : 10px 5px 10px 5px;
     padding: 20px 0px 20px 0px;
     height: 100%;
 }
@@ -189,6 +194,21 @@
 }
 
 #content-row0{
-    margin: 0;
+    margin: 0px;
     height: auto;
+}
+
+.usecase-container{
+    margin: 0;
+    background:rgba(240, 102, 23, 1);
+    text-align: center;
+    height: 100vh;
+}
+
+#usecase-title{
+    color: white;
+    padding-top: 5vh; 
+    font-size: 64PX;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
 }

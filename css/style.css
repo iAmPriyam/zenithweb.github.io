@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 #nav{
     background-attachment: scroll;
     position: relative;
@@ -14,7 +17,6 @@
     width: 0px;
     z-index: 5;
     overflow: hidden;
-    opacity: 0.6;
     -webkit-transition-duration: 0.6s;
 }
 
@@ -102,12 +104,12 @@
 }
 
 #heading-space-para{
-    color: orange;
+    color: rgba(240, 102, 23, 0.6);
     text-align: justify;
 }
 
 #content-container{
-    background: white;
+    background-image: linear-gradient( to bottom, rgba(61, 51, 51, 1), rgba(102,102,102,1) );  
     margin: auto;
     /* background-image: linear-gradient(to top, #2f2f2f,#000000); */
 }
@@ -127,14 +129,12 @@
 
 #card1, #card2b, #card3{
     width:60%;
-    background: yellow;
 }
 #tcard1, #tcard2b, #tcard3{
     width: 25rem;
 }
 #card1b, #card2, #card3b{
     width: 35%;
-    background: red;
 }
 
 #tcard1b, #tcard2, #tcard3b{
@@ -155,8 +155,40 @@
     margin: 0 0 0 1rem;
     padding: 10px 10px 10px 10px ;
     background: rgba(255, 255, 255, 0.8);
-    color: black;
+    color: black;   
+    box-shadow: 2px 2px 10px #666666;
 }
+#card1{
+    background-image: url("../img/container-image-1.jpg");
+    background-size: cover;
+}
+
+#card1b{
+    background-image: url("../img/container-image-2.jpg");
+    background-size: cover;
+}
+
+#card2{
+    background-image: url("../img/container-image-3.jpg");
+    background-size: cover;
+}
+
+#card2b{
+    background-image: url("../img/container-image-4.jpg");
+    background-size: cover;
+}
+
+#card3{
+    background-image: url("../img/container-image-5.jpg");
+    background-size: cover;
+}
+
+#card3b{
+    background-image: url("../img/container-image-6.jpg");
+    background-size: cover;
+}
+
 #content-row0{
+    margin: 0;
     height: auto;
 }

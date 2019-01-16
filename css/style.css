@@ -4,7 +4,7 @@
 }
 #nav{
     background-attachment: scroll;
-    position: relative;
+    position: fixed;
     top:40vh;
     float: left;
     border-top-right-radius: 160px;
@@ -13,7 +13,7 @@
     text-align: center;
     color: white;
     size: 48px;
-    z-index: 100;
+    z-index: 120;
     height: 160px;
     width: 0px;
     overflow: hidden;
@@ -31,6 +31,7 @@
 }
 
 .nav-box{
+    position: fixed;
     position: relative;
     height: 5px;
     width:  50px;
@@ -55,12 +56,11 @@
     width: 50px;
     background-color:  rgba(240, 102, 23, 0.96);
     border-radius: 100%;
-    position: absolute;
+    position: fixed;
     display: none;
     -webkit-transition: 0.8s ease-in-out;
     overflow: hidden;
     margin: auto;
-    box-shadow: 4px 4px 10px #000000;
 }
 
 #home-btn{

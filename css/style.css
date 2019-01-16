@@ -61,6 +61,7 @@
     -webkit-transition: 0.8s ease-in-out;
     /* overflow: hidden; */
     margin: auto;
+    z-index: 120;
 }
 
 #home-btn{
@@ -70,15 +71,15 @@
 
 #use-btn{
     left: 5px;
-    top: 63vh;
+    top: 64vh;
 }
 
-#about-btn{
+#gallery-btn{
     top: 55vh;
     left: 84px;
 }
 
-#gallery-btn{
+#about-btn{
     left: 84px;
     top: 40vh;
 }
@@ -390,7 +391,7 @@ $duration: 25s;
 
 .usecase-container{
     margin: 0;
-    background:rgba(240, 102, 23, 1);
+    background:rgb(247, 81, 30);
     text-align: center;
     height: 100vh;    
     /* box-shadow: inset 21px 21px 100px #000000; */
@@ -399,4 +400,80 @@ $duration: 25s;
 #usecase-title{
     color: white;
     padding-top: 3rem;
+}
+
+.primary-node, .secondary-node{
+    background-color:rgb(247, 81, 30); 
+    z-index:5;
+    padding: auto;
+    margin: auto;
+    position: absolute;
+    border-radius: 100%;
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 8px; 
+    color: white;
+}
+
+.node-title,.secondary-node-title{
+    position: relative;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+}
+
+#zenith{
+    height: 200px;
+    width: 200px;
+    top:40vh;
+    right: 42vw;
+}
+#zenith-label{
+    top:74px;
+    font-size: 30px;
+}
+
+.secondary-node{
+    height: 150px;
+    width: 150px;
+}
+
+.secondary-node-title{
+    top: 55px;
+    font: 20px;
+}
+
+#health{
+    top:20vh;
+    right:300px;
+}
+
+#health-label{
+    top: 45px;
+}
+
+#insure{
+    top:70vh;
+    right:350px;
+}
+
+#tel{
+    right: 1000px;
+}
+
+#bank{
+    right:1090px;
+    top:60vh;
+}
+
+.connect{
+    position: absolute;
+    width: 300px;
+    color: white;
+    border-width: 4px;
+}
+
+#z-to-t{
+    top:35vh;
+    right:500px;
+    transform: rotate(20deg);
 }

@@ -1,6 +1,6 @@
 # iampriyam.zenithweb.io
 
-Website hosted @ https://github.com/iAmPriyam.github.io/zenithweb.github.io/
+Website hosted @ https://iampriyam.github.io/zenithweb.github.io
 
 !!-- The website is still under construction --!!
 

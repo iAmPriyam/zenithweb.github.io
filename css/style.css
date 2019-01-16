@@ -59,7 +59,7 @@
     position: fixed;
     display: none;
     -webkit-transition: 0.8s ease-in-out;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: auto;
 }
 

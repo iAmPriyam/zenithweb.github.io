@@ -20,12 +20,38 @@
     <!--Beginning of top container-->
     <div id="tcontainer">
       
-        <div  id="nav">   
-            <div class="nav-box" id="nav-box1"> </div>
-            <!-- <span id="nav-text">NAV</span> -->
-            <div class="nav-box" id="nav-box2"> </div>
-            <div class="nav-box" id="nav-box3"> </div>
+        <div  id="nav" onClick="navigationAnim()">   
+            <div class="nav-box" id="nav-box1" onClick="navigationAnim()" > </div>
+            <div class="nav-box" id="nav-box2" onClick="navigationAnim()"> </div>
+            <div class="nav-box" id="nav-box3" onClick="navigationAnim()"> </div>
+
          </div>
+
+
+         <a href="#tcontainer" >
+            <div class="nav-button" id="home-btn">
+              <i class="fas fa-home" aria-hidden="true" style="color: white;"></i>
+            </div>
+         </a>
+            <a href="#about-container" >
+            <div class="nav-button" id="about-btn">
+                <i class="fas fa-home" aria-hidden="true" style="color: white;"></i>
+              </div>
+            </a>
+            <a href="#content-container" >
+            <div class="nav-button" id="gallery-btn">
+                <i class="fas fa-info-circle" aria-hidden="true" style="color: white;"></i>
+            </div>
+          </a>
+          <a href="#usecase-title" >
+            <div class="nav-button" id="use-btn">
+                <i class="fas fa-home" aria-hidden="true" style="color: white;"></i>
+            </div>
+            </a>
+
+
+
+
       <div class="tcontainer-row" id="row1">
           <div class="polygon" id="top-right-poly">
               <img src="img/top-right-polygon.svg">
@@ -202,6 +228,45 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis at explicabo eos, cupiditate quam voluptates. Aut cumque pariatur explicabo vitae recusandae alias commodi voluptate nihil, neque doloremque vero cupiditate minima incidunt inventore quae temporibus hic quasi quod? Corporis modi laboriosam voluptate quam, delectus nesciunt veniam quos non temporibus doloribus praesentium voluptates enim esse ut tenetur eligendi qui. Dolorem, iusto. Vitae officiis accusamus harum corrupti vel quis voluptates ullam pariatur officia repellendus, quasi laborum libero, earum blanditiis consectetur sed excepturi, necessitatibus possimus ipsam. Pariatur ipsum, nihil eveniet molestiae, illo at incidunt provident vel veniam eos voluptatem esse sapiente voluptatibus necessitatibus?
       </p> -->
     </div>
+        <script type="text/javascript">  
+            var click=true;
+            function navigationAnim(){
+              setTimeout(function(){   
+                if(click){
+                document.getElementById('home-btn').style.display='block';
+                }
+                else{
+                  document.getElementById('home-btn').style.display='none';
+                }
+              },200)
+              setTimeout(function(){
+                if(click){
+                document.getElementById('about-btn').style.display='block';
+                }
+                else{
+                  document.getElementById('about-btn').style.display='none';
+                }
+              },600)
+              setTimeout(function(){
+                if(click){
+                document.getElementById('gallery-btn').style.display='block';
+                }
+                else{
+                  document.getElementById('gallery-btn').style.display='none';
+                }
+              },400)
+              setTimeout(function(){
+                if(click){
+                document.getElementById('use-btn').style.display='block';
+                }
+                else{
+                  document.getElementById('use-btn').style.display='none';
+                }},800)
+                click=!click;
+              
+              }
+        </script>
+
     <script src="js/vendor/jquery.js"> </script>
     <script src="js/vendor/what-input.js"> </script>
     <script src="js/vendor/foundation.js"> </script>

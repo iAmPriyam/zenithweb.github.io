@@ -13,11 +13,21 @@
     text-align: center;
     color: white;
     size: 48px;
+    z-index: 100;
     height: 160px;
     width: 0px;
-    z-index: 5;
     overflow: hidden;
     -webkit-transition-duration: 0.6s;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#nav:active{
+    background-color: white; 
+}
+
+#nav:active > .nav-box{
+    background-color: rgba(240, 102, 23, 0.96) ; 
 }
 
 .nav-box{
@@ -40,8 +50,42 @@
     position: relative;
 }
 
+.nav-button{
+    height: 50px;
+    width: 50px;
+    background-color:  rgba(240, 102, 23, 0.96);
+    border-radius: 100%;
+    position: absolute;
+    display: none;
+    -webkit-transition: 0.8s ease-in-out;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 4px 4px 10px #000000;
+}
+
+#home-btn{
+    top:32vh;
+    left: 5px;
+}
+
+#use-btn{
+    left: 5px;
+    top: 63vh;
+}
+
+#about-btn{
+    top: 55vh;
+    left: 84px;
+}
+
+#gallery-btn{
+    left: 84px;
+    top: 40vh;
+}
+
+
 #tcontainer{
-    
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     background-image: url("../img/top-container-bg.jpeg");
@@ -61,6 +105,84 @@
 }
 #top-right-poly{
     right:0px;
+}
+
+.particle-network-animation {
+    position: fixed;
+    z-index: 30;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	background-color: #171717;
+  
+  &::before {
+    z-index: -2;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* // background-image: url(http://web.frfr.me/dev/world-map-optimized.jpg);
+    background-image: url(https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=786a67dca1d8791d181bfd90b16240d9);
+    background-position: center center; */
+  background-size: cover;
+    opacity: 0.2;
+  }
+}
+.glow {
+  z-index: -1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-image: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.025), transparent);
+}
+$duration: 25s;
+.glow-1 {
+  width: 150vw;
+  height: 150vh;
+  margin-top: -75vh;
+  margin-left: -75vw;
+  animation: glow-1-move $duration linear infinite both;
+}
+@keyframes glow-1-move {
+  from {
+    transform: translate(-100%, 100%);
+  }
+  to {
+    transform: translate(100%, -100%);
+  }
+}
+.glow-2 {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -50vh;
+  margin-left: -50vw;
+  animation: glow-2-move $duration linear $duration / 3 infinite both;
+}
+@keyframes glow-2-move {
+  from {
+    transform: translate(-100%, 0%);
+  }
+  to {
+    transform: translate(100%, 100%);
+  }
+}
+.glow-3 {
+  width: 120vw;
+  height: 120vh;
+  margin-top: -60vh;
+  margin-left: -60vw;
+  animation: glow-3-move $duration linear $duration / 3 * 2 infinite both;
+}
+@keyframes glow-3-move {
+  from {
+    transform: translate(100%, 100%);
+  }
+  to {
+    transform: translate(0%, -100%);
+  }
 }
 
 
@@ -120,10 +242,12 @@
 }
 #row1{
     height: 100vh;
+    width: 100%;
     /* background: rgba(61, 51, 51, 1); */
      background-image: linear-gradient(to top,#383131,#000000); 
     /* box-shadow: inset 0px -10px 10px #ffffff; */
-    background-attachment: fixed;    
+    background-attachment: fixed; 
+    box-shadow: inset 10px -10px 70px #000000;   
 }
 
 #row1-col1{
@@ -172,6 +296,7 @@
     background: #303030;
     overflow: hidden;
     padding-bottom: 10rem; 
+    box-shadow: inset 10px -10px 70px #000000;
     /* background-image: linear-gradient( to bottom, rgba(61, 51, 51, 1), rgba(102,102,102,1) );   */
     /* background-image: linear-gradient(to top, #2f2f2f,#000000); */
 }
@@ -182,7 +307,8 @@
 }
 
 .content-row-col{
-    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     height: 100%;
     width: auto;
     /* background-image: url("../img/client-servicing.jpg"); */
@@ -204,8 +330,7 @@
     width: 20rem;
 }
 
-.cards:nth-child(even){
-    align-content: right;
+.cards:nth-child(even){margin-left:10px;
 }
 
 .cards{
@@ -213,8 +338,6 @@
     overflow: hidden;
     /* position: relative; */
     /* background: cyan; */
-    margin  : 10px 5px 10px 5px;
-    padding: 20px 0px 20px 0px;
     height: 100%;
 }
 

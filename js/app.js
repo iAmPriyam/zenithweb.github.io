@@ -1,18 +1,31 @@
 var title= $('#title');
-var id=$('id');
 var tcontainer = $('#tcontainer');
 $tcontainer.css('background','blue');
 function setup(){
-var i = 0;
-var txt = 'Lorem ipsum dummy text bla bla.';
-var speed = 50;
-  if (i < txt.length) {
-    $id.innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
+    
     $title.velocity({translateY:-100},{duration:400,easing:"ease-in-out"});
     $title.velocity({opacity:1});
 }
 
+var home_btn=$('#home-btn');
+var about_btn=$('#about-btn');
+var gallery_btn=$('#gallery-btn');
+var use_btn=$('#use-btn');
+var nav=$("#nav");
 window.addEventListener("load",setup,false);
+
+$nav.on("mousedown",function (){
+    setTimeout(function(){
+      $home_btn.velocity({display:block});
+    },200);
+    setTimeout(function(){
+        $about_btn.velocity({display:block});
+    },600);
+    setTimeout(function(){
+        $gallery_btn.velocity({display:block});
+    },400);
+    setTimeout(function(){
+        $use_btn.velocity({display:block});
+    },800);
+}
+ 

@@ -470,10 +470,19 @@ $duration: 25s;
     width: 300px;
     color: white;
     border-width: 4px;
+    border-style: solid;
+    border-color: white;
 }
 
 #z-to-t{
-    top:35vh;
-    right:500px;
-    transform: rotate(20deg);
+    top:42vh;
+    right:720px;
+    transform: rotate(22deg);
+}
+
+#z-to-b{
+    width: 400px;
+    top:58vh;
+    right:720px;
+    transform: rotate(-16deg);
 }

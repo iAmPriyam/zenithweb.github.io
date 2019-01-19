@@ -391,11 +391,11 @@ $duration: 25s;
 }
 
 .usecase-container{
-    margin: 0;
+    margin: auto;
     background:#ff7f00;
-    text-align: center;    
-    align-content: center;
-    height: 105vh;    
+    box-shadow: inset 10px -10px 70px #000000;  
+    height: auto;
+    overflow: auto;
     /* box-shadow: inset 21px 21px 100px #000000; */
 }
 
@@ -405,12 +405,17 @@ $duration: 25s;
     padding-top: 3rem;
     right: 12rem;
 }
+
+#usecase-vector{
+}
+
 #usecase-svg{
-    top:100px;
-    left: 170px;
-    position: relative;
-    height: 90vh;
-    width: 100%;
+    margin: auto;
+    display: block;
+    padding-top: 150px;
+    height: 800px;
+    width: 1200px;
+    
 }
 
 
@@ -431,6 +436,8 @@ text{
     font-family: 'Syncopate', sans-serif;
     font-weight: 700;
 }
+
+
 .node-title,.secondary-node-title{
     position: relative;
     font-family: 'Syncopate', sans-serif;

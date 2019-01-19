@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{    
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 #nav{
     background-attachment: scroll;

@@ -1,8 +1,9 @@
 var title= $('#title');
 var tcontainer = $('#tcontainer');
+var svg_zen=$('#svg_2');
 $tcontainer.css('background','blue');
 function setup(){
-    
+    $svg_zen.velocity(transition.expandin);
     $title.velocity({translateY:-100},{duration:400,easing:"ease-in-out"});
     $title.velocity({opacity:1});
 }

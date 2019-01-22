@@ -779,7 +779,7 @@ hr{
     width: 85%;
     padding-left: 10%;
     }
-    .title{
+    .text-heading,.title{
         font-size: 1.4rem;
     }
     .mu-footer-area{
@@ -815,7 +815,7 @@ hr{
         font-size: 4rem;
     }
     
-    .title{
+    .text-heading.title{
         font-size: 1.4rem;
     }
     #nav{
@@ -902,6 +902,12 @@ hr{
 @media (max-width: 360px){
     #heading-space-title{
         width:100%;
+    }
+    .text-heading{
+        font-size: 0.5rem;
+    }
+    .text-para{
+        font-size: 0.4rem;
     }
     #title{
         font-size: 2rem;

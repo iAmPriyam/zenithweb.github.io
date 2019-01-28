@@ -331,6 +331,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#820761', end
     text-align: justify;
 }
 span{
+    width: auto;
+    margin-right: 0.4rem;
     color: #ffffff;
 }
 ol {
@@ -364,16 +366,17 @@ ol {
   
 
 #content-container{
+    margin: auto;
     background: #303030;
     overflow: hidden;
     padding-bottom: 10rem; 
-    box-shadow: inset 10px -10px 70px #000000;
+    /* box-shadow: inset 10px -10px 70px #000000; */
     /* background-image: linear-gradient( to bottom, rgba(61, 51, 51, 1), rgba(102,102,102,1) );   */
     /* background-image: linear-gradient(to top, #2f2f2f,#000000); */
 }
 
 .content-container-row{
-    height: 35rem;
+    height: 500px;
     margin: 20px 100px 20px 100px;
 }
 
@@ -394,22 +397,54 @@ ol {
     float: left;
     overflow: hidden;
     display: block;
-    padding-left:10%;
-    padding-right:10%;
+    padding-left:2%;
+    padding-right:2%;
     /* position: relative; */
     /* background: cyan; */
     height: 100%;
-    width:95%;
+    width:100%;
 }
 
 .text-card{
-    width:85%;
-    margin: 15px 0 0 10px;
+    float: left;
+    height: 450px;
+    width:35%;
+    margin: 15px 5px 15px 15px;
     padding: 10px 10px 10px 10px ;
     background: rgba(255, 255, 255, 0.8);
-    color: black;   
+    color: rgb(90, 61, 61);   
     box-shadow: 2px 2px 10px #666666;
     -webkit-transition: 0.6s;
+}
+.content-card{
+    text-align: right;
+    float: left;
+    height: 450px;
+    width: 60%; 
+    /* background: #f00; */
+    margin: 15px 5px 15px 15px;
+    padding: auto ;
+}
+
+#content-card-left{
+    text-align: left;
+}
+#content-sub-heading,#content-sub-heading-left{
+    /* font-weight: bold;  */
+    margin: 45px 25px 95px 25px;
+    font-size: 1.6rem;
+    padding: 10px 10px 10px 10px;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+#content-sub-heading{
+    margin-top:200px;
+}
+
+#content-sub-heading:hover{
+    font-size: 1.7rem;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
 }
 
 #tcard2{
@@ -421,45 +456,36 @@ ol {
 .text-card:hover {
     box-shadow: 2px 2px 30px #666666;
 }
-#card1{
+#content-row1{
     background-image: url("../img/container-image-1.jpg");
     background-size: cover;
 }
 
-#card1b{
-    background-image: url("../img/container-image-2.jpg");
-    background-size: cover;
-}
 
-#card2{
+#content-row2{
     background-image: url("../img/container-image-3.jpg");
     background-size: cover;
 }
 
-#card2b{
-    background-image: url("../img/container-image-4.jpg");
-    background-size: cover;
-}
 
-#card3{
+#content-row3{
     background-image: url("../img/container-image-5.jpg");
     background-size: cover;
 }
 
-#card3b{
-    background-image: url("../img/container-image-6.jpg");
-    background-size: cover;
+#card1,#card3{
+    background-image: linear-gradient(to left, rgba(48,48,48,1) 6%, rgba(0,0,0,0));
 }
-
+#card2{
+    background-image: linear-gradient(to right, rgba(48,48,48,1) 6%, rgba(0,0,0,0));
+}
 .text-heading{
-    font-size: 2rem;
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
+    font-size: 4.6rem;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif; 
+    overflow: hidden; 
 }
 
-.text-para{
-    font-family: 'Oswald', sans-serif;
-}
 
 #content-row0{
     box-shadow: inset 10px -10px 100px #000000;
@@ -914,10 +940,7 @@ hr{
     .content-container-row{
         margin-left: 10px;
     }
-    #gallery-title{
-        padding-left: 10%;
-        /* left:1vw; */
-    }
+    
     .nav-box{
         z-index: 200;
         height: 5px;
